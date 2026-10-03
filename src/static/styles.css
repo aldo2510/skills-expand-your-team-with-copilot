@@ -32,6 +32,27 @@
   --info-light: #d1ecf1;
 }
 
+body.dark-mode {
+  color-scheme: dark;
+  --primary: #3949ab;
+  --primary-light: #5c6bc0;
+  --primary-dark: #283593;
+  --secondary: #bf360c;
+  --secondary-light: #e65100;
+  --secondary-dark: #870000;
+  --background: #121212;
+  --surface: #1e1e1e;
+  --text-primary: #f5f5f5;
+  --text-secondary: #b0b0b0;
+  --border: #424242;
+  --border-light: #333333;
+  --border-focus: #616161;
+  --success-light: #1b3a20;
+  --warning-light: #4a3515;
+  --error-light: #4a1c1c;
+  --info-light: #15343a;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -205,6 +226,11 @@ section h3 {
   letter-spacing: 0.3px;
 }
 
+body.dark-mode .activity-tag {
+  background: #303f73;
+  color: #c5cae9;
+}
+
 /* Capacity Indicator */
 .capacity-container {
   margin: 8px 0;
@@ -296,6 +322,16 @@ button {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s;
+}
+
+input {
+  background-color: var(--surface);
+  color: var(--text-primary);
+  border-color: var(--border);
+}
+
+input::placeholder {
+  color: var(--text-secondary);
 }
 
 /* Tooltip styles */
@@ -617,6 +653,24 @@ footer {
   position: absolute;
   top: 10px;
   right: 15px;
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 480px) {
+  header {
+    padding-top: 42px;
+  }
+
+  #user-controls {
+    top: 8px;
+    right: 8px;
+  }
+
+  .icon-button {
+    padding: 3px 8px;
+    font-size: 0.75rem;
+  }
 }
 
 #user-status {
