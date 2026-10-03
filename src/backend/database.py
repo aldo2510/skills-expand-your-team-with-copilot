@@ -52,6 +52,7 @@ initial_activities = {
             "end_time": "08:00"
         },
         "max_participants": 20,
+        "difficulty": "Beginner",
         "participants": ["emma@mergington.edu", "sophia@mergington.edu"]
     },
     "Morning Fitness": {
@@ -161,6 +162,7 @@ initial_activities = {
             "end_time": "16:00"
         },
         "max_participants": 18,
+        "difficulty": "Intermediate",
         "participants": ["isabella@mergington.edu", "lucas@mergington.edu"]
     },
     "Sunday Chess Tournament": {
@@ -172,6 +174,7 @@ initial_activities = {
             "end_time": "17:00"
         },
         "max_participants": 16,
+        "difficulty": "Advanced",
         "participants": ["william@mergington.edu", "jacob@mergington.edu"]
     }
 }
